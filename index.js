@@ -125,10 +125,11 @@
 // setInterval(showname , 1000 , "lakshya", "shrivastava");
 
 
-setTimeout(function run(){
+// setTimeout(function run(){
 
-    console.log("hy there")
+//     console.log("hy there")
 
-    setTimeout(run , 1000);
+//     setTimeout(run , 1000);
 
-},2000)
+// },2000)
+
