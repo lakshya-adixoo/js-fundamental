@@ -133,3 +133,18 @@
 
 // },2000)
 
+
+//revisited arrow function
+
+function defer(f, ms) {
+    return function() {
+      setTimeout(() => f.apply(this, arguments), ms);
+    };
+  }
+  
+  function sayHi(who) {
+    console.log('Hy, ' + who);
+  }
+  
+  let sayHiDeferred = defer(sayHi, 2000);
+  sayHiDeferred("lakshya"); 
