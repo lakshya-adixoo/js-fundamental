@@ -131,20 +131,91 @@
 
 //     setTimeout(run , 1000);
 
-// },2000)
+// // },2000)
 
 
-//revisited arrow function
+// //revisited arrow function
 
-function defer(f, ms) {
-    return function() {
-      setTimeout(() => f.apply(this, arguments), ms);
-    };
+// function defer(f, ms) {
+//     return function() {
+//       setTimeout(() => f.apply(this, arguments), ms);
+//     };
+//   }
+  
+//   function sayHi(who) {
+//     console.log('Hy, ' + who);
+//   }
+  
+//   let sayHiDeferred = defer(sayHi, 2000);
+//   sayHiDeferred("lakshya"); 
+
+
+
+// //try and catch
+
+// try{
+//   wrfWF
+//   console.log("hello")
+ 
+// }catch(err){
+//   console.log("hy there is a error")
+// }
+
+
+
+// setTimeout(function(){
+
+//   try{
+//     console.log("hello world")
+//   }catch(err){
+//     console.log("error there")
+//   }
+
+// },1000)
+
+// try{
+//   console.log("try block is executed")
+// }catch{
+//   console.log("catching the error")
+// }finally{
+//   console.log("final block executed")
+// }
+
+
+//code for the callback function and the promises
+
+// function calc(a, b, callback) {
+//     return callback(a, b);
+// }
+
+// function add(x, y) {
+//     return x + y;
+// }
+
+// function mul(x, y) {
+//     return x * y;
+// }
+
+// console.log(calc(5, 3, add));    
+// console.log(calc(5, 3, mul));
+
+
+
+// let myPromise = new Promise(function(myResolve, myReject) {
+    
+//      myResolve(); 
+//       myReject(); 
+//     });
+    
+//     myPromise.then(
+//       function(value) { console.log("successfully executed") },
+//       function(error) { console.log("Throwing some error")  }
+//     );
+    
+
+
+function delay(ms) {
+    console.log("code block inside the function is executed")
   }
   
-  function sayHi(who) {
-    console.log('Hy, ' + who);
-  }
-  
-  let sayHiDeferred = defer(sayHi, 2000);
-  sayHiDeferred("lakshya"); 
+  delay(3000).then(() => console.log('runs after 3 seconds'));
