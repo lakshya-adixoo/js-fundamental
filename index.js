@@ -214,8 +214,83 @@
     
 
 
-function delay(ms) {
-    console.log("code block inside the function is executed")
-  }
+// function delay(ms) {
+//     console.log("code block inside the function is executed")
+//   }
   
-  delay(3000).then(() => console.log('runs after 3 seconds'));
+//   delay(3000).then(() => console.log('runs after 3 seconds'));
+
+
+
+//callback function
+// function callbackRevision( callback){
+//     console.log("hy this is to be executed first");
+
+//    callback();
+// }
+
+// callbackRevision(()=>{
+//     console.log("this is to be executed at a second position");
+// })
+
+
+//API promises
+
+// Promise.all([
+//     new Promise(resolve => setTimeout(() => resolve("hello world 1"), 3000)),
+//     new Promise(resolve => setTimeout(() => resolve("hello world 2") ,2000)),
+//     new Promise(resolve => setTimeout(() => resolve("hello world 3") ,1000))
+// ]).then(console.log)
+
+// const promise1 = Promise.resolve(3);
+// const promise2 = new Promise((resolve, reject) =>
+//   setTimeout(reject, 100, "foo"),
+// );
+// const promises = [promise1, promise2];
+
+// Promise.allSettled(promises).then((results) =>
+//   results.forEach((result) => console.log(result.status)),
+// );
+
+
+// Promise.race([
+//     new Promise((resolve, reject) => setTimeout(() => resolve("serial number 1"), 1000)),
+//     new Promise((resolve, reject) => setTimeout(() => reject(new Error("Whoops!")), 2000)),
+//     new Promise((resolve, reject) => setTimeout(() => resolve("serial number 3"), 3000))
+//   ]).then(console.log);
+
+
+//async / await function 
+
+
+// async function loadJson(url) {
+//     let response = await fetch(url); 
+  
+//     if (response.status == 200) {
+//       let json = await response.json(); 
+//       return json;
+//     }
+  
+//     throw new Error(response.status);
+//   }
+  
+//   loadJson('https://google.com')
+//     .catch(console.log);
+
+
+// async function wait() {
+//     await new Promise(resolve => setTimeout(resolve, 1000));
+  
+//     return 10;
+//   }
+  
+//   function f() {
+//     // shows 10 after 1 second
+//     wait().then(result => console.log(result));
+//   }
+  
+//   f();
+
+ setTimeout(()=>{
+    console.log("efgweugf");
+},3000)
