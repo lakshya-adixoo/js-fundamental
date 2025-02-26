@@ -242,6 +242,8 @@
 //     new Promise(resolve => setTimeout(() => resolve("hello world 3") ,1000))
 // ]).then(console.log)
 
+
+//example of promise.allSettled
 // const promise1 = Promise.resolve(3);
 // const promise2 = new Promise((resolve, reject) =>
 //   setTimeout(reject, 100, "foo"),
@@ -291,6 +293,6 @@
   
 //   f();
 
- setTimeout(()=>{
-    console.log("efgweugf");
-},3000)
+//  setTimeout(()=>{
+//     console.log("efgweugf");
+// },3000)
